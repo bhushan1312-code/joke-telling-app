@@ -13,18 +13,14 @@ pi
 
     .then(data=>data.json())
 
-
-
     .then(realdata=>{
 
         para.innerText= `setup  : ${realdata.setup}` ;
-         console.log(realdata.setup)
+        console.log(realdata.setup)
         para1.innerText =`punchline : ${realdata.punchline}`;
         console.log(realdata.punchline)
-
-
+        
     })
-
     .catch(error=>console.log(error))
 
     }
